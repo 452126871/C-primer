@@ -1,0 +1,88 @@
+#输出名字和位置
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+	cout << "我的名字" << "sad" << "location" << "bupt";
+
+	return 0;
+}
+
+#将long值转换为码
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+
+	long num;
+  
+	cin >> num;
+	cout << num*220;
+
+	return 0;
+}
+
+
+题： 编写一个C++程序，它使用 3 个用户定义的函数（包括main()），并生成下面的输出：
+
+Three blind mice
+Three blind mice
+See how they run
+See how they run
+其中一个函数要调用两次，该函数生成前两行；另一个函数也被调用两次，并生成其余的输出。
+
+#include<iostream>
+
+using namespace std;
+void print1()
+{
+	cout << "Three blind mice" << endl;
+
+}
+void print2() {
+	cout << "See how they run" << endl;
+}
+int main() {
+
+	print1();
+	print1();
+	print2();
+	print2();
+
+	return 0;
+}
+
+题： 编写一个程序，让用户输入其年龄，然后显示该年龄包含多少个月，如下所示：
+
+#include<iostream>
+
+using namespace std;
+int main() {
+	int age;
+	cout << "input your age! " << endl;
+	cin >> age;
+	cout << "your total months: " << age * 12;
+	return 0;
+}
+编写一个程序，其中的main( )调用一个用户定义的函数（以摄氏温度值为参数，并返回相应的华氏温度值）。该程序按下面的格式要 求用户输入摄氏温度值，并显示结果：
+#include<iostream>
+
+using namespace std;
+double typeChange(int Ce_value)
+{
+
+	return 1.8 * Ce_value + 32;
+}
+int main() {
+
+	int Ce_value;
+	cout << "input : ";
+	cin >> Ce_value;
+	cout << "result  ";
+	cout <<Ce_value<<"degree Celsius is " << typeChange(Ce_value) << endl;;
+	return 0;
+}
